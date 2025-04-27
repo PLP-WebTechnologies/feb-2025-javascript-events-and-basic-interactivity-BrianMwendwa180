@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>JavaScript Event Handling/Interactive Elements</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>About JavaScript Event Handling & Interactive Elements</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  </header>
+
+  <section id="user-instructions">
+    <h2>User Instructions</h2>
+    <input type="text" id="instructionInput" placeholder="Enter instruction here" />
+    <button id="executeInstruction">Execute</button>
+    <p id="instructionFeedback" style="color: #e67e22; font-weight: bold; margin-top: 10px;"></p>
+  </section>
+
+  <section id="event-handling">
+    <h2>Event Handling 🎈</h2>
+    <button id="eventButton">Click me!</button>
+    <p id="eventMessage"></p>
+  </section>
+
+  <section id="interactive-elements">
+    <h2>Interactive Elements 🎮</h2>
+
+    <div id="colorButtonContainer">
+      <button id="colorButton">Change my color</button>
+    </div>
+
+    <div id="imageGallery">
+      <h3>Image Gallery</h3>
+      <div class="gallery-container">
+        <img src="https://images.pexels.com/photos/3857400/pexels-photo-3857400.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Image 1" class="gallery-image active" />
+        <img src="https://images.pexels.com/photos/5475814/pexels-photo-5475814.jpeg?auto=compress&cs=tinysrgb&w=400" />
+        <img src="https://images.pexels.com/photos/12899191/pexels-photo-12899191.jpeg?auto=compress&cs=tinysrgb&w=400"  />
+      </div>
+      <button id="prevImage">Previous</button>
+      <button id="nextImage">Next</button>
+    </div>
+
+    <div id="tabsAccordion">
+      <h3>Tabs</h3>
+      <div class="tabs">
+        <button class="tab-button active" data-tab="tab1">Tab 1</button>
+        <button class="tab-button" data-tab="tab2">Tab 2</button>
+        <button class="tab-button" data-tab="tab3">Tab 3</button>
+      </div>
+      <div class="tab-content active" id="tab1">
+        <p>This is content for Tab 1.</p>
+      </div>
+      <div class="tab-content" id="tab2">
+        <p>This is content for Tab 2.</p>
+      </div>
+      <div class="tab-content" id="tab3">
+        <p>This is content for Tab 3.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="form-validation">
+    <h2> Form Validation 📋✅</h2>
+    <form id="signupForm" novalidate>
+      <div class="form-group">
+        <label for="name">Name (required):</label>
+        <input type="text" id="name" name="name" required />
+        <span class="error-message" id="nameError"></span>
+      </div>
+      <div class="form-group">
+        <label for="email">Email (required, valid format):</label>
+        <input type="email" id="email" name="email" required />
+        <span class="error-message" id="emailError"></span>
+      </div>
+      <div class="form-group">
+        <label for="password">Password (min 8 characters):</label>
+        <input type="password" id="password" name="password" required minlength="8" />
+        <span class="error-message" id="passwordError"></span>
+      </div>
+      <button type="submit">Sign Up</button>
+    </form>
+    <p id="formMessage"></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
